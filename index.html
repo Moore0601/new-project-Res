@@ -8,6 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -246,45 +250,45 @@
             <div class="skills__list grid">
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">HTML</p>
-                    <span class="skills__number text-sm">90%</span>
+                  <p class="skills__name text-sm">HTML</p>
+                  <span class="skills__number text-sm">90%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 90%;"></span>
+                  <span class="skills__percentage" style="width: 90%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">CSS</p>
-                    <span class="skills__number text-sm">80%</span>
+                  <p class="skills__name text-sm">CSS</p>
+                  <span class="skills__number text-sm">80%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 80%;"></span>
+                  <span class="skills__percentage" style="width: 80%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">JAVASCRIPT</p>
-                    <span class="skills__number text-sm">70%</span>
+                  <p class="skills__name text-sm">JAVASCRIPT</p>
+                  <span class="skills__number text-sm">70%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 70%;"></span>
+                  <span class="skills__percentage" style="width: 70%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">React</p>
-                    <span class="skills__number text-sm">85%</span>
+                  <p class="skills__name text-sm">React</p>
+                  <span class="skills__number text-sm">85%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 85%;"></span>
+                  <span class="skills__percentage" style="width: 85%"></span>
                 </div>
               </div>
             </div>
@@ -295,45 +299,45 @@
             <div class="skills__list grid">
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">PHP</p>
-                    <span class="skills__number text-sm">90%</span>
+                  <p class="skills__name text-sm">PHP</p>
+                  <span class="skills__number text-sm">90%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 90%;"></span>
+                  <span class="skills__percentage" style="width: 90%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">Node JS</p>
-                    <span class="skills__number text-sm">80%</span>
+                  <p class="skills__name text-sm">Node JS</p>
+                  <span class="skills__number text-sm">80%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 80%;"></span>
+                  <span class="skills__percentage" style="width: 80%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">Python</p>
-                    <span class="skills__number text-sm">50%</span>
+                  <p class="skills__name text-sm">Python</p>
+                  <span class="skills__number text-sm">50%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 50%;"></span>
+                  <span class="skills__percentage" style="width: 50%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                    <p class="skills__name text-sm">MySQL</p>
-                    <span class="skills__number text-sm">85%</span>
+                  <p class="skills__name text-sm">MySQL</p>
+                  <span class="skills__number text-sm">85%</span>
                 </div>
 
                 <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 85%;"></span>
+                  <span class="skills__percentage" style="width: 85%"></span>
                 </div>
               </div>
             </div>
@@ -345,14 +349,165 @@
         <h2 class="section__title">Work_</h2>
 
         <div class="project__categories">
-            <button class="category__btn text-xs active-work">ALL</button>
-            <button class="category__btn text-xs">MOBILE APP</button>
-            <button class="category__btn text-xs">WEB-SITES</button>
-            <button class="category__btn text-xs">LANDING PAGES</button>
+          <button class="category__btn text-xs active-work" data-filter="all">
+            ALL
+          </button>
+          <button class="category__btn text-xs" data-filter=".app">
+            MOBILE APP
+          </button>
+          <button class="category__btn text-xs" data-filter=".web">
+            WEB-SITES
+          </button>
+          <button class="category__btn text-xs" data-filter=".landing">
+            LANDING PAGES
+          </button>
+        </div>
+
+        <div class="projects__container grid">
+          <div class="project__item grid mix app">
+            <img src="/img/project-1.png" alt="" class="project__img" />
+            <div class="project__data">
+              <h3 class="project__title text-lg">
+                MOBILE AND DESKTOP APP FOR LONDON HOSTEL STORE
+              </h3>
+              <p class="project__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias nemo, minus neque reprehenderit officia ipsum
+                cupiditate similique vitae sit, corrupti sint ad autem sequi
+                magnam?
+              </p>
+              <h4 class="project__stack text-xs">USED STACK:</h4>
+              <ul class="tag text-sm">
+                <li>html5</li>
+                <li>css3</li>
+                <li>JavaScript</li>
+                <li>BEM</li>
+                <li>bower</li>
+                <li>grunt</li>
+              </ul>
+              <a href="" class="project__link text-sm">www.superapp.com</a>
+            </div>
+          </div>
+
+          <div class="project__item grid mix web">
+            <img src="/img/project-2.png" alt="" class="project__img" />
+            <div class="project__data">
+              <h3 class="project__title text-lg">
+                ADMIN TEMPLATE FOR PHOTO SERVICE
+              </h3>
+              <p class="project__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias nemo, minus neque reprehenderit officia ipsum
+                cupiditate similique vitae sit, corrupti sint ad autem sequi
+                magnam?
+              </p>
+              <h4 class="project__stack text-xs">USED STACK:</h4>
+              <ul class="tag text-sm">
+                <li>html5</li>
+                <li>css3</li>
+                <li>JavaScript</li>
+                <li>BEM</li>
+                <li>bower</li>
+                <li>grunt</li>
+              </ul>
+              <a href="" class="project__link text-sm">www.superapp.com</a>
+            </div>
+          </div>
+
+          <div class="project__item grid mix landing">
+            <img src="/img/project-3.png" alt="" class="project__img" />
+            <div class="project__data">
+              <h3 class="project__title text-lg">
+                WEB APP AGE FOR TRAVEL AGENT
+              </h3>
+              <p class="project__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias nemo, minus neque reprehenderit officia ipsum
+                cupiditate similique vitae sit, corrupti sint ad autem sequi
+                magnam?
+              </p>
+              <h4 class="project__stack text-xs">USED STACK:</h4>
+              <ul class="tag text-sm">
+                <li>html5</li>
+                <li>css3</li>
+                <li>JavaScript</li>
+                <li>BEM</li>
+                <li>bower</li>
+                <li>grunt</li>
+              </ul>
+              <a href="" class="project__link text-sm">www.superapp.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section">
+        <div class="testimonial__bg">
+          <div class="testimonial__icon">
+            <i class="ri-double-quotes-r"></i>
+          </div>
+
+          <div class="swiper testimonial__container container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial__item">
+                <h3 class="author__name text-lg">Moore Muhammed</h3>
+                <p class="author__project">
+                  Project: Landing Page for travel company
+                </p>
+                <div class="ruler"></div>
+                <p class="testimonial__description text-lg">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laboriosam modi ab beatae ducimus incidunt repellat saepe
+                  consectetur eius corrupti provident recusandae quo est
+                  molestias, explicabo id officia odio sint. Aperiam dolore eos
+                  voluptate perspiciatis, nihil, explicabo harum distinctio quod
+                  praesentium eligendi animi voluptates rem quidem.
+                </p>
+              </div>
+
+              <div class="swiper-slide testimonial__item">
+                <h3 class="author__name text-lg">Moore Muhammed</h3>
+                <p class="author__project">
+                  Project: Landing Page for travel company
+                </p>
+                <div class="ruler"></div>
+                <p class="testimonial__description text-lg">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laboriosam modi ab beatae ducimus incidunt repellat saepe
+                  consectetur eius corrupti provident recusandae quo est
+                  molestias, explicabo id officia odio sint. Aperiam dolore eos
+                  voluptate perspiciatis, nihil, explicabo harum distinctio quod
+                  praesentium eligendi animi voluptates rem quidem.
+                </p>
+              </div>
+
+              <div class="swiper-slide testimonial__item">
+                <h3 class="author__name text-lg">Moore Muhammed</h3>
+                <p class="author__project">
+                  Project: Landing Page for travel company
+                </p>
+                <div class="ruler"></div>
+                <p class="testimonial__description text-lg">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laboriosam modi ab beatae ducimus incidunt repellat saepe
+                  consectetur eius corrupti provident recusandae quo est
+                  molestias, explicabo id officia odio sint. Aperiam dolore eos
+                  voluptate perspiciatis, nihil, explicabo harum distinctio quod
+                  praesentium eligendi animi voluptates rem quidem.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-button-next"><img src="img/arrow-next.svg" alt=""></div>
+            <div class="swiper-button-prev"><img src="img/arrow-prev.svg" alt=""></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
     </main>
 
-    <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/mixitup.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
