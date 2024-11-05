@@ -498,9 +498,148 @@
               </div>
             </div>
 
-            <div class="swiper-button-next"><img src="img/arrow-next.svg" alt=""></div>
-            <div class="swiper-button-prev"><img src="img/arrow-prev.svg" alt=""></div>
+            <div class="swiper-button-next">
+              <img src="img/arrow-next.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="img/arrow-prev.svg" alt="" />
+            </div>
             <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog section container" id="blog">
+        <h2 class="section__title">Latest Blog_</h2>
+
+        <div class="post__container grid">
+          <div class="post__card">
+            <img src="/img/blog-1.png" alt="" class="post__img" />
+
+            <div class="post__content">
+              <p class="post__date text-xs">November 02, 2024</p>
+              <h3 class="post__title text-sm">HOW TO MAKE BASTARD MONEY</h3>
+              <p class="post__description text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis magni quasi praesentium.
+              </p>
+            </div>
+          </div>
+
+          <div class="post__card">
+            <img src="/img/blog-2.png" alt="" class="post__img" />
+
+            <div class="post__content">
+              <p class="post__date text-xs">November 01, 2024</p>
+              <h3 class="post__title text-sm">HOW TO BECOME A DEVELOPER</h3>
+              <p class="post__description text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis magni quasi praesentium.
+              </p>
+            </div>
+          </div>
+
+          <div class="post__card">
+            <img src="/img/blog-3.png" alt="" class="post__img" />
+
+            <div class="post__content">
+              <p class="post__date text-xs">November 02, 2024</p>
+              <h3 class="post__title text-sm">HOW TO MAKE POOL MONEY</h3>
+              <p class="post__description text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis magni quasi praesentium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact__content container">
+          <h2 class="section__title">Get in touch_</h2>
+
+          <div class="contact__container grid">
+            <div class="contact__info">
+              <dl class="contact__list">
+                <dt>Phone:</dt>
+                <dd>+(234) 902 340 6606</dd>
+                <dt>Linkedln:</dt>
+                <dd>Moore06</dd>
+                <dt>Email:</dt>
+                <dd>muhammedoyebanji@gmail.com</dd>
+              </dl>
+
+              <ul class="content__socials">
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    class="contact__social-link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.linkedln.com/"
+                    class="contact__social-link"
+                    >Linkedln</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.github.com/" class="contact__social-link"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.mass.com/" class="contact__social-link"
+                    >Mass</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact__form">
+              <p class="contact__form-title">Or just write me a letter here_</p>
+
+              <form action="" id="contact-form">
+                <div class="contact__input-div">
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    class="contact__input"
+                    id="contact-name"
+                  />
+                </div>
+
+                <div class="contact__input-div">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    class="contact__input"
+                    id="contact-email"
+                  />
+                </div>
+
+                <div class="contact__input-div">
+                  <textarea
+                    placeholder="Type the message here"
+                    class="contact__input textarea"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <p class="contact__message text-sm" id="contact-message"></p>
+
+                <button type="submit" class="button contact__button">
+                  Send
+                </button>
+              </form>
+
+              <p class="footer__copy">
+                &copy; 2024 Moore Muham. All Rights Reserved
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -508,6 +647,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/mixitup.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
