@@ -1,3 +1,11 @@
+const header = document.getElementById('header');
+if(this.screenY >= 50) header.classList.add('scroll-header');
+else header.classList.remove('scroll-header')
+
+
+
+
+
 let mixerProjects = mixitup(".projects__container", {
   selectors: {
     target: ".project__item",
@@ -43,11 +51,33 @@ const sendEmail = (e) => {
     contactEmail.value === "" ||
     Message.value === ""
   ) {
-    contactMessage.classList.remove('color-light');
-    contactMessage.classList.add('color-dark');
-    contactMessage.textContent = 'Write all the input fields';
+    contactMessage.classList.remove("color-light");
+    contactMessage.classList.add("color-dark");
+    contactMessage.textContent = "Write all the input fields";
   } else {
-    emailjs.sendForm('','','','')
+    emailjs
+      .sendForm(
+        "service_paca",
+        "template_tiocjpn",
+        "#contact-form",
+        "vxDcl4UI2jbOQBn6f"
+      )
+      .then(
+        () => {
+          contactMessage.classList.add("color-light");
+          contactMessage.textContent = "Message sent ✔️";
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert("OOPs!...SOMETHING WENT WRONG...", error);
+        }
+      );
+
+      contactName.value = '';
+      contactEmail.value = '';
+      Message.value = '';
   }
 };
 
